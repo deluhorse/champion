@@ -77,14 +77,14 @@ class Base(Controller):
         #     self.finish()
 
         # 3.
-        if self.auth:
-            if self.auth[0] is not None:
-                auth_status = yield self.auth_check(user_data_dict)
-                if not auth_status:
-                    self.finish()
-
-                # 刷新token
-                yield self.refresh_token()
+        # if self.auth:
+        #     if self.auth[0] is not None:
+        #         auth_status = yield self.auth_check(user_data_dict)
+        #         if not auth_status:
+        #             self.finish()
+        #
+        #         # 刷新token
+        #         yield self.refresh_token()
 
     @tornado.gen.coroutine
     def intercept_ip(self, user_data_dict):

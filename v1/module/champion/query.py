@@ -11,7 +11,7 @@ import tornado.gen
 
 
 class Controller(Base):
-    auth = (('seller',), False)
+    auth = (None, False)
 
     @tornado.gen.coroutine
     def post(self):

@@ -14,7 +14,7 @@ class MyTest(Tester):
         self.path = 'champion.service'
         self.method = 'query_champion'
         self.params = {
-            'touzi': ["6", "2", "6", "6", "6", "6"]
+            'touzi': '["2", "2", "2", "3", "5", "6"]'
         }
 
 

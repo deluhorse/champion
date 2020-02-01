@@ -535,5 +535,8 @@ Code = {
     'MEMBER_NOT_BIND_PHONE': {'code': 28012, 'msg': '用户未绑定手机号'},
 
     # task
-    'TASK_PARAMS_NOT_EXIST': {'code': 30001, 'msg': '参数不正确'}
+    'TASK_PARAMS_NOT_EXIST': {'code': 30001, 'msg': '参数不正确'},
+
+    # 31 没有拿到红
+    'CHAMPION_NOT_EXIST': {'code': 31001, 'msg': '没有高中，再接再厉'}
 }

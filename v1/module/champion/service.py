@@ -136,3 +136,5 @@ class Service(ServiceBase):
 
                     except Exception as e:
                         self.logger.exception(e)
+
+        raise self._gre('CHAMPION_NOT_EXIST')

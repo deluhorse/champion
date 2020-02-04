@@ -16,7 +16,7 @@ class Properties(object):
         file_name = file_name if file_name else 'setting'
         self.properties = configparser.ConfigParser()
         try:
-            self.properties.read('/apps/conf/student/' + file_name + '.conf', encoding='utf-8')
+            self.properties.read('/apps/conf/champion/' + file_name + '.conf', encoding='utf-8')
         except Exception as e:
             self.logger.exception(e)
 

@@ -538,5 +538,8 @@ Code = {
     'TASK_PARAMS_NOT_EXIST': {'code': 30001, 'msg': '参数不正确'},
 
     # 31 没有拿到红
-    'CHAMPION_NOT_EXIST': {'code': 31001, 'msg': '没有高中，再接再厉'}
+    'CHAMPION_NOT_EXIST': {'code': 31001, 'msg': '没有高中，再接再厉'},
+    'ROOM_NOT_EXIST': {'code': 31002, 'msg': '房间不存在'},
+    'ROOM_EXIST': {'code': 31003, 'msg': '房间已存在'},
+    'ROOM_USERS_NOT_ENOUGH': {'code': 31004, 'msg': '房间参与人数不足'}
 }

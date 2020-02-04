@@ -106,7 +106,7 @@ class ServiceBase(object):
         """
 
         if is_num:
-            chrset = '0123456789'
+            chrset = '123456'
         else:
             if not chrset:
                 chrset = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWSYZ'

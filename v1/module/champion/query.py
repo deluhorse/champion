@@ -11,10 +11,10 @@ import tornado.gen
 
 
 class Controller(Base):
-    auth = (('seller',), False)
+    auth = (None, False)
 
     @tornado.gen.coroutine
-    def post(self):
+    def get(self):
         params = self.params()
         res = yield self.do_service('champion.service', 'query_champion', params=params)
         self.out(res)

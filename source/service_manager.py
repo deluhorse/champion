@@ -23,7 +23,7 @@ class ServiceManager(object):
     # power_tree = generate_power_tree()
 
     @staticmethod
-    def do_local_service(service_path, method, params={}, version='', power=[]):
+    def do_local_service(service_path, method, params={}, version='v1', power=[]):
         """
         执行本地服务
         :param service_path: 
@@ -80,7 +80,7 @@ class ServiceManager(object):
             return SystemConstants.REMOTE_SERVICE_ERROR
 
     @staticmethod
-    def do_service(service_path='', method='', params={}, version='', power=[]):
+    def do_service(service_path='', method='', params={}, version='v1', power=[]):
         """
         执行服务
         :param service_path: 

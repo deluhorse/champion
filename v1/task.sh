@@ -16,19 +16,19 @@ mkdir -p $DATA_VAR_DIR
 
 ############################################################
 if [ "$1" = "stop" ] ; then
-    /apps/python/python2/bin/supervisorctl -c /apps/conf/wmb2c/supervisord.config stop $2
+    supervisorctl -c /apps/conf/champion/supervisord.config stop $2
 
 elif [ "$1" = "restart" ]; then
-    /apps/python/python2/bin/supervisorctl -c /apps/conf/wmb2c/supervisord.config restart $2
+    supervisorctl -c /apps/conf/champion/supervisord.config restart $2
 
 elif [ "$1" = "-d" ]; then
-        /apps/python/python2/bin/supervisord -c /apps/conf/wmb2c/supervisord.config
+    supervisord -c /apps/conf/champion/supervisord.config
 
 elif [ "$1" = "start" ]; then
-    /apps/python/python2/bin/supervisorctl -c /apps/conf/wmb2c/supervisord.config start $2
+    supervisorctl -c /apps/conf/champion/supervisord.config start $2
 
 elif [ "$1" = "shutdown" ]; then
-    /apps/python/python2/bin/supervisorctl -c /apps/conf/wmb2c/supervisord.config shutdown
+    supervisorctl -c /apps/conf/champion/supervisord.config shutdown
 else
     echo "usage: $0 -d|start|stop|restart|shutdown"
 fi

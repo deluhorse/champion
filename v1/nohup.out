@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "index.py", line 20, in <module>
+    from route import route, power
+  File "/apps/web/champion/v1/route.py", line 9, in <module>
+    import v1.base.error as error
+  File "/apps/web/champion/v1/base/error.py", line 6, in <module>
+    from base.base import Base
+  File "/apps/web/champion/v1/base/base.py", line 18, in <module>
+    from source.properties import Properties
+  File "/apps/web/champion/source/properties.py", line 6, in <module>
+    import configparser
+ImportError: No module named configparser
